@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gourmet au Catering</title>
+  <style>
+ body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: rgba(233, 180, 7, 0.838);
+      color: #f1f1f1;
+      letter-spacing: 5px;
+      position: fixed;
+      width: 100%;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #f1f1f1;
+      margin-left: 40px;
+      letter-spacing: 2px;
+    }
+
+    .burger {
+      position: relative;
+    }
+
+    .burger img {
+      width: 100%;
+      height: auto;
+      display: flex;
+    }
+
+    .hs {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 24px;
+      letter-spacing: 5px;
+    }
+
+   .main {
+  display: flex;
+  max-width: 1200px;
+  margin: 60px auto; 
+  padding: 0 40px; 
+  gap: 50px; 
+  align-items: center; 
+ }
+ .about h1 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+ }
+
+  .about h4 {
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    line-height: 1.7;
+    font-size: 17px;
+  }
+
+
+    .menu {
+      display: flex;
+     max-width: 1200px;
+     margin: 60px auto; 
+     padding: 0 60px; 
+     gap: 50px; 
+     align-items: center;
+    }
+
+    .bread h1{
+        letter-spacing: 5px;
+    }
+    .bread h3{
+        letter-spacing: 5px;
+    }
+    .bread p{
+        color: rgba(0,0,0,0.5);
+    }
+    .menu-img {
+        display:flex;
+        padding: 0px 60px;
+        margin: 60px auto ;
+    }
+
+    
+    .contact {
+      display: flex;
+     max-width: 1200px;
+     margin: 60px auto; 
+     padding: 0 60px; 
+     flex-direction: column;
+
+    }
+
+    .form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.form input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.form input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+
+}
+
+
+.form button {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #eee;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #ccc;
+}
+
+
+.form button {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #eee;
+  color: black;
+  border: none;
+  font-weight: bold;
+}
+
+.form button:hover {
+  background-color: #ccc;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+    <div class="org"></div>
+    
+     <div class="navbar">
+      <div>Gourmet au Catering</div>
+      <div>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+      </div>
+     </div>
+
+    
+     <div class="burger">
+      <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="burger">
+      <div class="hs">
+        <h2>Le Catering</h2>
+      </div>
+     </div>
+
+     <div class="main">
+      <div class="img">
+        <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="table setting">
+      </div>
+      <div class="about">
+         <h1 style="text-align: center;">About Catering</h1>
+         <h4 style="text-align: center; margin-top: 50px;">Tradition since 1889</h4>
+         <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. We only use seasonal ingredients.
+         </p>
+          <p style="color: rgba(0, 0, 0, 0.5);">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+            laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div> 
+     </div>
+
+     <hr>
+
+     <div class="menu">
+      <div class="bread">
+         <h1 style="text-align: center;">Our Menu</h1>
+         <br>
+
+         <h3>Bread Basket</h3>
+         <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+         <h3>Honey Almond Granola with Fruits</h3>
+         <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+
+         <h3>Belgian Waffle</h3>
+         <p>Vanilla flavored batter with malted flour - $7.50</p>
+
+         <h3>Scrambled Eggs</h3>
+         <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+
+         <h3>Blueberry Pancakes</h3>
+         <p>With syrup, butter and lots of berries 8.50</p>
+      </div>
+          <div class="menu-img">
+             <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="pancake">
+           </div>
+     </div>
+
+     <hr>
+
+     <div class="contact">
+          <h1>Contact</h1>
+           <p>We offer full-service catering for any event, large or small. We understand your 
+          needs and we will cater the food to satisfy the biggest criteria of them allboth look and taste.
+         Do not hesitate to contact us.</p>
+
+           <h3 style="color: rgb(102, 164, 226);">Catering Service, 42nd Living St, 43043 New York, NY</h3>
+          <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+
+       </div>
+       
+       <form class="form">
+            <input type="text" name="name" placeholder="Name">
+
+            <input type="number" name="people" placeholder="How many people">
+
+            <input type="text" name="message" placeholder="Message \ Special requirements">
+
+            <button type="submit" style="background-color: black; color:#f1f1f1;">SEND MESSAGE</button>
+     </form>
+
+
+  </div> 
+
+</body>
+</html>
