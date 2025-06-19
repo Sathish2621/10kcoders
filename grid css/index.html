@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: azure;
+      }
+        .parent{
+            display: grid;
+            height: 300px;
+            grid-template-columns: repeat(3, 1fr);
+    
+        }
+        .parent div > div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(219, 202, 54);
+        
+        }
+        .parent>div{
+            margin: 20px;
+            height: 250px;
+            /* background-color: rgb(246, 106, 106); */
+            gap: 10px;
+        }
+        
+        .grid1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .grid1>div{
+            background-color: rgb(246, 106, 106);
+            gap: 10px;
+        }
+        .grid2{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);           
+            gap: 10px;          
+        }
+        .grid2>div{
+            background-color: rgb(246, 106, 106);
+            gap: 10px;
+        }
+        .item1{
+            grid-column: 1 / 3;
+            grid-row:1/5
+        }
+        .item2{
+            grid-column: 3/ 5;
+            grid-row:1/3
+        }
+        .item3{
+            grid-column: 3/ 5;
+            grid-row:3/5
+        }
+        .grid3{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .grid3>div{
+            background-color: rgb(246, 106, 106);
+            gap: 10px;
+        }
+        .grid4{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+        }
+        .grid4>div{
+            background-color: rgb(246, 106, 106);
+            gap: 10px;
+        }
+        .i41{
+            grid-column: 1/3;
+            /* grid-row: 4/5; */
+        }
+        .i42{
+            grid-column: 3/5;
+            grid-row: 1/4;
+        }
+        .i43{
+            grid-column: 5/7;
+        }
+        .i44{
+            grid-column: 1/3;
+            grid-row:2/5 ;
+        }
+        .i45{
+            grid-column: 3/5;
+            grid-row: 4/5;
+        }
+        .i46{
+            grid-column: 5/7;
+            grid-row: 2/5;
+        }
+        .grid5{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* gap: 10px; */
+        }
+        .grid5>div{
+            background-color: rgb(246, 106, 106);
+            gap: 10px;
+        }
+        .i51{
+            grid-column:1/4;
+
+        }
+        .i52{
+            grid-column:4/7;
+        }
+        .i53{
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+        .i54{
+            grid-column: 3/5;
+            grid-row: 2/3;
+        }
+        .i55{
+            grid-column: 5/7;
+            grid-row: 2/3;
+        }
+        .grid6{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .grid6>div{
+            background-color: rgb(246, 106, 106);
+            gap: 10px;
+        }
+        .i61{
+            grid-column: 1/3;
+            grid-row:1/4;
+        }
+
+        .i63{
+            grid-row:2/4;
+        }
+        .grid7{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+
+        }
+        .grid7>div{
+            background-color: rgb(246, 106, 106);
+            gap: 10px;
+        }
+        .i71{
+            grid-column: 1/3;
+            grid-row: 1/5;
+        }
+        .i72{
+            grid-column: 3/5;
+            grid-row: 1/3;
+        }
+        .i74{
+            grid-row:3/5;
+        }
+        .i73{
+            grid-row: 3/4;
+        }
+        .grid8{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+
+        }
+        .grid8>div{
+            background-color: rgb(246, 106, 106);
+            gap: 10px;
+        }
+        .i81{
+            grid-column: 1/3;
+            grid-row:1/6;
+        }
+        .i82{
+            grid-column: 3/5;
+            grid-row:1/4;
+        }
+        .i83{
+            grid-row:1/3;
+        }
+        .i85{
+            grid-row: 4/6;
+        }
+        .i86{
+            grid-row: 4/6;
+        }
+        .i87{
+            grid-row: 4/6;
+        }
+        .grid9{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+
+        }
+        .grid9>div{
+            background-color: rgb(246, 106, 106);
+            gap: 10px;
+        }
+        .i95{
+            grid-column:1/3;
+            grid-row:2/4;
+        }
+        .i96{
+            grid-column:3/5;
+            grid-row:2/4;
+        }
+        h1{
+            text-shadow: 2px 3px 5px rgb(85, 57, 225);
+            text-decoration: wavy;
+        }
+    </style>
+
+</head>
+<body>
+    <h1><center>GRID - BOX</center></h1><br><br><br><br><br>
+    <div class="parent">
+        <div class="grid1">
+            <div class="item">item-1</div>
+            <div class="item">item-2</div>
+            <div class="item">item-3</div>
+        </div>
+        <div class="grid2">
+           <div class="item1">item-1</div>
+           <div class="item2">item-2</div>
+           <div class="item3">item-3</div>
+        </div>
+        <div class="grid3">
+            <div class="item">item-1</div>
+            <div class="item">item-2</div>
+            <div class="item">item-3</div>
+            <div class="item">item-4</div>
+            <div class="item">item-5</div>
+            <div class="item">item-6</div>
+        </div>
+        <div class="grid4">
+            <div class="i41">item-1</div>
+            <div class="i42">item-2</div>
+            <div class="i43">item-3</div>
+            <div class="i44">item-4</div>
+            <div class="i45">item-5</div>
+            <div class="i46">item-6</div>
+        </div>
+        <div class="grid5">
+            <div class="i51">item-1</div>
+            <div class="i52">item-2</div>
+            <div class="i53">item-3</div>
+            <div class="i54">item-4</div>
+            <div class="i55">item-5</div>
+        </div>
+        <div class="grid6">
+            <div class="i61">item-1</div>
+            <div class="i62">item-2</div>
+            <div class="i63">item-4</div>
+            <div class="i64">item-1</div>
+            <div class="i65">item-2</div>
+            <div class="i66">item-3</div>
+        </div>
+        <div class="grid7">
+            <div class="i71">item-1</div>
+            <div class="i72">item-2</div>
+            <div class="i73">item-3</div>
+            <div class="i74">item-4</div>
+            <div class="i75">item-5</div>
+        </div>
+        <div class="grid8">
+            <div class="i81">item-1</div>
+            <div class="i82">item-2</div>
+            <div class="i83">item-3</div>
+            <div class="i84">item-4</div>
+            <div class="i85">item-5</div>
+            <div class="i86">item-6</div>
+            <div class="i86">item-7</div>
+        </div>
+        <div class="grid9">
+            <div class="i91">item-1</div>
+            <div class="i92">item-2</div>
+            <div class="i93">item-3</div>
+            <div class="i94">item-4</div>
+            <div class="i95">item-5</div>
+            <div class="i96">item-6</div>
+            <div class="i97">item-7</div>
+            <div class="i98">item-8</div>
+            <div class="i99">item-9</div>
+            <div class="i990">item-10</div>
+        </div>
+    </div>
+</body>
+</html>
