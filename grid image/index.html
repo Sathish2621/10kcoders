@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 200px);
+      grid-gap: 10px;
+      grid-template-areas: 
+        "img1 img1 img2 img3"
+        "img4 img4 img2 img5"
+        "img4 img4 img2 img6";
+    }
+
+    .parent img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #img1 { grid-area: img1; }
+    #img2 { grid-area: img2; }
+    #img3 { grid-area: img3; }
+    #img4 { grid-area: img4; }
+    #img5 { grid-area: img5; }
+    #img6 { grid-area: img6; }
+</style>
+</head>
+<body>
+    <div class="parent">
+        <div id="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjTnwuiSltqgtG7e7hPN-5Z5AOHrXdW2KjCg&s" alt="" ></div>
+        <div id="img3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7RP1Uxx2mCVP50gwQluI6Adn3_6-2Wbhxw&s" alt="" ></div>
+        <div id="img2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhVhsVhxVC_t_Su0nDGcG9fFwOPrC_oC0ZQ&s" alt="" ></div>
+        <div id="img4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVD4yaQ29-DeYNiEBEf-qY56MyRC4PDBAG9A&s" alt="" ></div>
+        <div id="img5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRdZGDfabiEE53SqJIONGkSr8ekrbymVBL4A&s" alt="" ></div>
+        <div id="img6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODJRz9rPYGCnnOn1mCO46xNDxgdhMo7S-Rg&s" alt="" ></div>
+        
+    </div>
+    
+</body>
+</html>
