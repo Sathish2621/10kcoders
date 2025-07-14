@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crypgo – Buy and sell crypto of your choice, track your portfolio, and explore blockchain solutions.">
+  <meta name="keywords" content="Crypgo, cryptocurrency, blockchain, buy crypto, sell crypto, crypto portfolio">
+  <meta name="author" content="Crypgo Team">
+  <title>Crypgo – Buy and Sell Crypto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Crypto Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loader">
+  <div class="crypto-loader">
+    <img src="https://themewagon.github.io/Crypgo/images/icons/icon-bitcoin-circle.svg" alt="Loading">
+  </div>
+  <p class="loader-text">Loading Cryp<span style="color:#8fffa7">go</span>...</p>
+</div>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white fw-semibold" href="#"><img src="https://themewagon.github.io/Crypgo/images/logo/logo.svg" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cryptoNavbar"
+      aria-controls="cryptoNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="cryptoNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Buy & Sell</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Development</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Upgrade</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
+      </ul>
+      <div class="d-flex ms-lg-3">
+        <button class="btn btn-sm btn-signin" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</button>
+        <button class="btn btn-sm btn-signup">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-center">
+      <div class="modal-header justify-content-center">
+        <a href="#"><img src="https://themewagon.github.io/Crypgo/images/logo/logo.svg" alt=""></a>
+        <button type="button" class="btn-close btn-close-white position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-between mb-3">
+          <button class="btn btn-google"><i class="bi bi-google me-1"></i> Google</button>
+          <button class="btn btn-github"><i class="bi bi-github me-1"></i> GitHub</button>
+        </div>
+        <div class="mb-3 text-secondary">OR</div>
+        <form>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary-custom w-100 mb-2">Sign In</button>
+        </form>
+        <a href="#" class="text-decoration-none text-secondary small">Forgot Password?</a>
+        <div class="mt-2 modal-footer-text small">
+          <span class="text-secondary">Not a member yet?</span>
+          <a href="#"> Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div id="home" class="hero-section">
+      <div class="container hero-grid">
+       <div class="hero-content" data-aos="fade-right">
+          <p><img src="https://themewagon.github.io/Crypgo/images/icons/icon-bag.svg" alt="bag icon"> Crypto On The Go</p><br>
+          <h1>Buy and Sell <span style="color:#8fffa7">Crypto</span> of your choice!</h1>
+       <div class="btn-group">
+              <a href="#" class="btn btn-filled">Buy Crypto</a>
+              <a href="#" class="btn btn-outline">Sell Crypto</a>
+       </div>
+          <div class="store-links">
+            <a href="#"><img src="https://themewagon.github.io/Crypgo/images/hero/playstore.png" alt="Google Play"></a>
+            <a href="#"><img src="https://themewagon.github.io/Crypgo/images/hero/applestore.png" alt="App Store"></a>
+          </div>
+        </div>
+        <div class="hero-phone" data-aos="fade-left">
+          <img src="https://themewagon.github.io/Crypgo/images/hero/banner-image.png" alt="Phone" class="phone-img" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <section class="crypto-ticker">
+      <div class="ticker-wrapper">
+        <div class="ticker">
+          <div class="crypto-card">
+            <img src="https://themewagon.github.io/Crypgo/images/icons/icon-solana.svg" alt="Solana">
+            <div><strong>Solana</strong><br>$238.70<br><span class="down">-8.2%</span></div>
+          </div>
+          <div class="crypto-card">
+            <img src="https://themewagon.github.io/Crypgo/images/icons/icon-dogecoin.svg" alt="Dogecoin">
+            <div><strong>Dogecoin</strong><br>$0.394<br><span class="down">-46.2%</span></div>
+          </div>
+          <div class="crypto-card">
+            <img src="https://themewagon.github.io/Crypgo/images/icons/icon-bitcoin-circle.svg" alt="Bitcoin">
+            <div><strong>Bitcoin</strong><br>$93,291.24<br><span class="down">-0.9%</span></div>
+          </div>
+          <div class="crypto-card">
+            <img src="https://themewagon.github.io/Crypgo/images/icons/icon-ethereum.svg" alt="Ethereum">
+            <div><strong>Ethereum</strong><br>$3,128.84<br><span class="down">-35.9%</span></div>
+          </div>
+          <div class="crypto-card">
+            <img src="https://themewagon.github.io/Crypgo/images/icons/icon-litecoin.svg" alt="Litecoin">
+            <div><strong>Litecoin</strong><br>$86.11<br><span class="down">-79.1%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" data-aos="fade-up">
+      <div class="left-box slide-in-left">
+        <h2>Work with <span style="color: #8fffa7;">us</span></h2>
+        <h1>Successfully launch your <br> blockchain project.</h1>
+        <div class="chains">
+          <div class="chain">
+            <img src="https://themewagon.github.io/Crypgo/images/icons/icon-consulting.svg" alt="Consulting"><br>
+            <p>Blockchain Consulting</p>
+          </div>
+          <div class="chain"> 
+            <img src="https://themewagon.github.io/Crypgo/images/icons/icon-blockchain.svg" alt="Solutions"><br>
+            <p>Blockchain Solutions</p>
+          </div>
+          <div class="chain">
+            <img src="https://themewagon.github.io/Crypgo/images/icons/icon-Services.svg" alt="Custom Development"><br>
+            <p>Custom Development</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-box slide-in-right">
+        <div class="portfolio-card">
+          <img src="https://themewagon.github.io/Crypgo/images/work/img-work-with-us.png" alt="Work with us">
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" data-aos="zoom-in">
+      <div class="timeline-header">
+        <h2>Development <span style="color:#8fffa7">timeline</span></h2>
+        <h1>We can enter at any point or help you all the way through the development cycle.</h1>
+      </div> 
+      <div class="time">
+        <img src="https://themewagon.github.io/Crypgo/images/timeline/img-timeline.png" alt="phone">
+      </div>
+    </section>
+
+  <div class="plat" data-aos="fade-up">
+  <div class="plat-content">
+    <h1>Powered by the Cryp<span style="color: #8fffa7;">go</span> Platform</h1><br>
+    <p>Our products empower people to have safer and more trustworthy experiences.</p>
+  </div>
+  <button>Get Started</button>
+</div>
+
+
+  <div class="portfolio-section" data-aos="fade-up">
+  <div class="coin">
+    <img src="https://themewagon.github.io/Crypgo/images/portfolio/img-portfolio.png" alt="Coin photo">
+  </div>
+  <div class="currency">
+    <h2>Cryptocurrency <span style="color: #8fffa7;">Portfolio</span></h2>
+    <h1>Create your crypto portfolio today with Cryp<span style="color: #8fffa7;">Go</span>!</h1>
+    <p>Coinbase has a variety of features that make it the best place to start trading.</p>
+    <div class="apps">
+      <div class="app">
+        <img src="https://themewagon.github.io/Crypgo/images/portfolio/icon-wallet.svg" alt="Wallet">
+        <p>Manage your portfolio</p>
+      </div>
+      <div class="app">
+        <img src="https://themewagon.github.io/Crypgo/images/portfolio/icon-vault.svg" alt="Vault">
+        <p>Vault protection</p>
+      </div>
+      <div class="app">
+        <img src="https://themewagon.github.io/Crypgo/images/portfolio/icon-mobileapp.svg" alt="Mobile App">
+        <p>Mobile apps</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="upgrade" data-aos="fade-left">
+  <div class="upgrade-text">
+    <h2><span style="color: #8fffa7;">Upgrade</span></h2>
+    <h1>Upgrade Your Storage Layer</h1>
+    <p>Get faster, safer, more affordable cloud object storage with no central point of failure.</p>
+    <ul>
+      <li><i class="fa fa-circle-check"></i> 100% Secure</li>
+      <li><i class="fa fa-circle-check"></i> A Fraction of the Cost</li>
+      <li><i class="fa fa-circle-check"></i> More Durable</li>
+      <li><i class="fa fa-circle-check"></i> Easier to Use</li>
+    </ul>
+  </div>
+  <div class="upgrade-images">
+    <img src="https://themewagon.github.io/Crypgo/images/upgrade/img-upgrade.png" alt="USD/BTC" class="main-img">
+
+  </div>
+</div>
+
+
+<div class="side-section" data-aos="fade-right">
+  <div class="side">
+    <h2>Always By <span style="color: #8fffa7;">your side</span></h2>
+    <div class="underline"></div>
+    <h1>Be the first to use our Cryp<span style="color: #8fffa7;">go</span>!</h1>
+  </div>
+
+  <div class="academy-card" data-aos="zoom-in">
+  <div class="rams">
+    <img src="https://themewagon.github.io/Crypgo/images/perks/icon-support.svg" alt="Support">
+    <h2>24/7 Support</h2>
+    <p>Need help? Get your requests <br>solved quickly via support team.</p>
+  </div>
+  <div class="rams">
+    <img src="https://themewagon.github.io/Crypgo/images/perks/icon-community.svg" alt="Community">
+    <h3>Community</h3>
+    <p>Join the conversations on our <br> worldwide communities.</p>
+  </div>
+  <div class="rams">
+    <img src="https://themewagon.github.io/Crypgo/images/perks/icon-academy.svg" alt="Academy">
+    <h3>Academy</h3>
+    <p>Learn blockchain and crypto <br> for free.</p>
+  </div>
+</div>
+
+  <footer class="footer" data-aos="fade-up">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <h2><img src="https://themewagon.github.io/Crypgo/images/logo/logo.svg" alt="go"></h2>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook fa-bounce"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter fa-bounce"></i></a><br><br>
+          <p><strong>2025 Copyright | Cryp<span style="color: #8fffa7;">go</span>!</strong></p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Buy & Sell</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Upgrade</a></li>
+          <li><a href="#">Docs</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Disclosures</a></li>
+          <li><a href="#">Latest News</a></li>
+           
+        </ul>
+      </div>
+      <div class="footer-subscribe">
+        <h3>Subscribe</h3>
+        <p>Subscribe to get the latest news from us</p>
+        <form>
+          <input type="email" placeholder="Enter Email">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+     <p><strong>Distributed by Sathish</strong></p>
+    </div>
+  </div>
+</footer> 
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, 
+    once: true      
+  });
+</script>
+ <script>
+  window.addEventListener('load', () => {
+    document.getElementById('loader').style.display = 'none';
+  });
+</script>
+
+
+</body>
+</html>
